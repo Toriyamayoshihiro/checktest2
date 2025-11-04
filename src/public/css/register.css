@@ -1,0 +1,6 @@
+.error-message {
+  margin-top: 8px;
+  color: red;
+
+  grid-column: 2;
+}
