@@ -46,7 +46,7 @@ class ProductController extends Controller
     }
     public function store(ProductRequest $request)
     {
-    $productData = $request->only(['name','price','discription']);
+    $productData = $request->only(['name','price','description']);
         if($request->hasFile('image')){
             $path = $request->file('image')->store('images','public');
             $productData['image'] = $path;
@@ -59,7 +59,7 @@ class ProductController extends Controller
     {
         
         $product = Product::find($productId);
-        $productData = $request->only(['name','price','discription']);
+        $productData = $request->only(['name','price','description']);
         if($request->hasFile('image')){
             $path = $request->file('image')->store('images','public');
             $productData['image'] = $path;

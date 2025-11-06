@@ -69,11 +69,11 @@
         <span class="form__label--item">商品説明</span>
         <span class="form__label--required">必須</span>
          <div class="form__input--text">
-          <textarea name="discription" cols="40" rows="3" placeholder="商品の説明を入力">{{old('discription')}}</textarea>
+          <textarea name="description" cols="40" rows="3" placeholder="商品の説明を入力">{{old('description')}}</textarea>
         </div>
      </div>
 </div>
-@error('discription')
+@error('description')
   <p class="error-message">{{$message}}</p>
 @enderror
 

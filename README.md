@@ -60,12 +60,4 @@ php artisan storage:link
 - 開発環境：http://localhost/
 - phpMyAdmin:：http://localhost:8080/
 
-## 補足
-productsテーブルのdescriptionカラムをdiscriptionと設定したため、
-composer require doctrine/dbalコマンドで"doctrine/dbal"をインストールし
-2025_11_01_193010_rename_discription_to_description_in_products_tableファイルを作成し、マイグレートしたが
-Symfony\Component\ErrorHandler\Error\FatalError
-Declaration of Illuminate\Database\PDO\Concerns\ConnectsToDatabase::connect(array $params) must be compatible with Doctrine\DBAL\Driver::connect(array $params): Doctrine\DBAL\Driver\Connection
- Whoops\Exception\ErrorException
- Declaration of Illuminate\Database\PDO\Concerns\ConnectsToDatabase::connect(array $params) must be compatible with Doctrine\DBAL\Driver::connect(array $params): Doctrine\DBAL\Driver\Connection
- 上のエラーが返ってきて変更できませんでした。
+

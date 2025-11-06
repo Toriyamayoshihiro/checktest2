@@ -13,7 +13,7 @@ class Product extends Model
         'name' ,
         'price' ,
         'image' ,
-        'discription'
+        'description'
     ];
     public function seasons(): BelongsToMany
     {

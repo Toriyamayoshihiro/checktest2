@@ -34,8 +34,8 @@
           <p class="error-message">{{ $message }}</p>
     @enderror
     <span>商品説明</span>
-    <textarea name="discription" cols="40" rows="3" placeholder="商品の説明を入力">{{$product->discription}}</textarea>
-    @error('discription')
+    <textarea name="description" cols="40" rows="3" placeholder="商品の説明を入力">{{$product->description}}</textarea>
+    @error('description')
           <p class="error-message">{{ $message }}</p>
     @enderror
     <button class="update-form__button-submit" type="submit">変更を保存</button>
